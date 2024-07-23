@@ -257,7 +257,7 @@ if __name__ == '__main__':
     validation = not True  # To evaluate the generative models using divergences
     utility_validation = not True  # To evaluate the generative models using a utility metric
     marginal_plot = not True  # To store the marginal plots
-    show_results = not True  # Flag to show the results
+    show_results = True  # Flag to show the results
 
     n_large = 10000
     m_large = 7500
