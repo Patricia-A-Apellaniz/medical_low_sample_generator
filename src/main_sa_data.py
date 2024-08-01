@@ -33,7 +33,7 @@ def case_run(case_name, datasets, gen_methods, args, gen=True, utility_validatio
 
     for dataset in datasets:
         # Prepare the data, so that it is the same for all generative models
-        train_data = pd.read_csv(os.path.join(args['input_dir'], 'processed_data', dataset, 'preprocessed_data_all.csv'))
+        train_data = pd.read_csv(os.path.join(args['input_dir'], dataset, 'preprocessed_data_all.csv'))
         # Use always a 20% of the data for validation
         util_val_data = train_data.sample(frac=0.2, random_state=0)  # Data used for validation, always the same size, for comparison among all methods
         train_data = train_data.drop(util_val_data.index)
