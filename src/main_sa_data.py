@@ -40,7 +40,7 @@ def case_run(case_name, datasets, gen_methods, args, gen=True, utility_validatio
         if case_name != 'big_data':  # If we are not in the big data case, then use only the first 100 samples
             train_data = train_data.iloc[:100]
 
-        metadata_file = open(os.path.join(args['input_dir'], 'processed_data', dataset, 'metadata.pkl'), 'rb')
+        metadata_file = open(os.path.join(args['input_dir'], dataset, 'metadata.pkl'), 'rb')
         metadata = pickle.load(metadata_file)
         metadata_file.close()
 
