@@ -7,6 +7,7 @@ This repository provides:
 * Necessary scripts to preprocess the data and apply the generation methodology.
 * Functions to generate result tables and plots as presented in the paper. 
 * Experiments already done to save you time.
+* Additional experiments in document "AdditionalExperiments.pdf"
 
 For more details, see full paper [TBC]().
 
